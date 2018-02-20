@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title></title>
+	</head>
+
+	<body>
+		<table border=1 rules=all>
+			<!--table head-->
+			<tr>
+				{% for d in desc %}
+				<td>{{d}}</td>
+				{% endfor %}
+			</tr>
+			
+			<!--table data-->
+			{% for re in result %}
+			<tr>
+				{% for r in re %}
+				<td>{{r}}</td>
+				{% endfor %}
+			</tr>
+			{% endfor %}
+		</table>
+	</body>
+</html>
